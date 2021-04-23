@@ -1,11 +1,20 @@
 import React from "react";
+import PizzaMaker from "./PizzaForm";
+import styled from "styled-components";
 
 const App = () => {
+
+  const StyledHeader = styled.div`
+  text-align: center;
+  margin-top: 3%;
+  `
+
+
+
   return (
-    <>
-      <h1>Lambda Eats</h1>
-      <p>You can remove this code and create your own header</p>
-    </>
+    <StyledHeader>
+      <PizzaMaker />
+    </StyledHeader>
   );
 };
 export default App;
